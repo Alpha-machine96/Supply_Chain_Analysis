@@ -1,4 +1,8 @@
---Staging Dataco
+-- ============================================
+-- PART 1: DATA IMPORTATIONN AND CLEANING
+-- ============================================
+
+--Staging Dataco--
 CREATE TABLE staging_dataco (
     type TEXT,
     days_for_shipping_real INTEGER,
@@ -260,9 +264,8 @@ ________________________________________________________________________________
 -- PART 2: ANALYSIS QUERIES
 -- ============================================
 
--- ============================================
+
 -- 1. DELIVERY PERFORMANCE ANALYSIS
--- ============================================
 
 -- Overall delivery performance metrics
 SELECT 
@@ -300,9 +303,8 @@ GROUP BY shipping_mode
 HAVING COUNT(*) > 100
 ORDER BY coefficient_of_variation DESC;
 
--- ============================================
+
 -- 2. TEMPORAL ANALYSIS
--- ============================================
 
 -- Monthly order trends and performance
 SELECT 
@@ -343,9 +345,8 @@ WHERE s.shipping_date > o.order_date
 GROUP BY DATE_TRUNC('month', o.order_date)
 ORDER BY month;
 
--- ============================================
+
 -- 3. PRODUCT PERFORMANCE ANALYSIS
--- ============================================
 
 -- Top performing products by revenue
 SELECT 
@@ -393,9 +394,8 @@ HAVING COUNT(*) >= 50
 ORDER BY risk_percentage DESC
 LIMIT 15;
 
--- ============================================
+
 -- 4. CUSTOMER SEGMENTATION ANALYSIS
--- ============================================
 
 -- Customer segment performance
 SELECT 
@@ -460,9 +460,8 @@ GROUP BY
     END
 ORDER BY MIN(order_count);
 
--- ============================================
+
 -- 5. GEOGRAPHIC ANALYSIS
--- ============================================
 
 -- Performance by country
 SELECT 
@@ -493,9 +492,8 @@ JOIN shipments s ON o.order_id = s.order_id
 GROUP BY o.order_region
 ORDER BY revenue DESC;
 
--- ============================================
+
 -- 6. ADVANCED WINDOW FUNCTIONS
--- ============================================
 
 -- Running total of sales by month
 SELECT 
@@ -555,9 +553,8 @@ WHERE previous_order_date IS NOT NULL
 ORDER BY customer_id, order_date
 LIMIT 50;
 
--- ============================================
+
 -- 7. COHORT ANALYSIS
--- ============================================
 
 -- Monthly cohort retention
 WITH customer_cohorts AS (
@@ -584,9 +581,8 @@ SELECT
 FROM cohort_orders
 ORDER BY cohort_month, order_month;
 
--- ============================================
+
 -- 8. PROFITABILITY ANALYSIS
--- ============================================
 
 -- Profit analysis by product and category
 SELECT 
@@ -626,9 +622,8 @@ GROUP BY
     END
 ORDER BY MIN(discount_rate);
 
--- ============================================
+
 -- 9. PROBLEM IDENTIFICATION
--- ============================================
 
 -- Orders with significant delays
 SELECT 
