@@ -146,9 +146,9 @@ ________________________________________________________________________________
 
 **Delivery Performance**
 
-- [Shipping Mode X] has the highest late delivery rate at XX%
+- First Class has the highest late delivery rate at 95.27%
 
-- Average delivery delay: X.X days beyond scheduled time
+- Average delivery delay: 0.57 days beyond scheduled time
 
 - XX% of late deliveries occur in [Region/Country]
 
@@ -162,9 +162,9 @@ ________________________________________________________________________________
 
 **Product Performance**
 
-- [Category] has highest profit margin at XX%
+- Golf Carts and Bags has highest profit margin at 19.15%
 
-- [Product] has highest late delivery risk despite strong sales
+- Ogio Golf Race Shoes has highest late delivery risk despite strong sales
 
 - Discounts >20% reduce profit margins by XX% on average
 
