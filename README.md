@@ -1,12 +1,12 @@
 # Supply Chain Analysis
 ___________________________________________________________________________________________________________________________________________
 
-#  Project Overview
+##  Project Overview
 This project analyzes supply chain and logistics data from DataCo, a global e-commerce company, to identify delivery performance issues, optimize 
 shipping operations, and uncover insights for improving customer satisfaction. The analysis uses PostgreSQL to demonstrate advanced SQL skills including data normalization, complex JOINs, window functions, and business intelligence queries.
 _______________________________________________________________________________________________________________________________________
 
-#  Business Objectives
+##  Business Objectives
 
 Identify delivery bottlenecks and shipping modes with highest late delivery rates
 
@@ -19,7 +19,7 @@ Measure profitability and the impact of discounts on margins
 Detect patterns in order processing and fulfillment times
 ________________________________________________________________________________________________________________________________________
 
-#  Dataset
+##  Dataset
 
 **Source:** DataCo SMART SUPPLY CHAIN Dataset on Kaggle
 
@@ -38,7 +38,7 @@ Shipping data (modes, delivery times, late delivery risk)
 Sales and discount information
 ____________________________________________________________________________________________________________________________________
 
-#  Database Design
+##  Database Design
 
 Entity-Relationship Structure
 
@@ -54,7 +54,7 @@ The project normalizes the raw CSV data into 5 relational tables:
 
 **shipments** - Shipping and delivery performance data
 _____________________________________________________________________________________________________________________________________________
-#  Technologies Used
+##  Technologies Used
 
 Database: PostgreSQL 18
 
@@ -75,7 +75,7 @@ Date/time calculations
 
 CASE statements for categorization
 _________________________________________________________________________________________________________________________________________
-# Key Analyses
+## Key Analyses
 
 1. **Delivery Performance Analysis**
 
@@ -142,52 +142,62 @@ ________________________________________________________________________________
     Shipping modes needing improvement
 
 ___________________________________________________________________________________________________________________________________________
-# Key Findings
+## Key Findings
 
 **Delivery Performance**
 
-[Shipping Mode X] has the highest late delivery rate at XX%
+- [Shipping Mode X] has the highest late delivery rate at XX%
 
-Average delivery delay: X.X days beyond scheduled time
+- Average delivery delay: X.X days beyond scheduled time
 
-XX% of late deliveries occur in [Region/Country]
+- XX% of late deliveries occur in [Region/Country]
 
 **Customer Insights**
 
-[Segment] customers generate XX% of revenue but represent only XX% of customer base
+- [Segment] customers generate XX% of revenue but represent only XX% of customer base
 
-XX% of customers are one-time buyers (retention opportunity)
+- XX% of customers are one-time buyers (retention opportunity)
 
-Top 20 customers contribute XX% of total revenue
+- Top 20 customers contribute XX% of total revenue
 
 **Product Performance**
 
-[Category] has highest profit margin at XX%
+- [Category] has highest profit margin at XX%
 
-[Product] has highest late delivery risk despite strong sales
+- [Product] has highest late delivery risk despite strong sales
 
-Discounts >20% reduce profit margins by XX% on average
+- Discounts >20% reduce profit margins by XX% on average
 
 **Operational Issues**
 
-[Shipping Mode] shows high variance (unreliable)
+- [Shipping Mode] shows high variance (unreliable)
 
-Processing time increased by XX% during [Time Period]
+- Processing time increased by XX% during [Time Period]
 
-[Region] consistently experiences longer delivery times
+- [Region] consistently experiences longer delivery times
 
 _______________________________________________________________________________________________________________________________
 
-# Recommendations
+## Recommendations
 
-Negotiate with or replace unreliable shipping carriers showing high late delivery rates
+- Negotiate with or replace unreliable shipping carriers showing high late delivery rates
 
-Implement expedited processing for high-value customer segments
+- Implement expedited processing for high-value customer segments
 
-Optimize inventory in regions with longest delivery times
+- Optimize inventory in regions with longest delivery times
 
-Review discount strategy for products with <X% profit margin
+- Review discount strategy for products with <X% profit margin
 
-Launch customer retention program targeting one-time buyers
+- Launch customer retention program targeting one-time buyers
 
-Investigate bottlenecks in [specific region/category] causing delays
+- Investigate bottlenecks in [specific region/category] causing delays
+
+____________________________________________________________________________________________________________________________
+
+## Acknowledgments
+
+- Dataset provided by DataCo via Kaggle
+
+- Inspired by real-world supply chain analytics challenges
+
+- Built as a portfolio project to demonstrate SQL expertise
