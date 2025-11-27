@@ -23,7 +23,7 @@ ________________________________________________________________________________
 
 **Source:** DataCo SMART SUPPLY CHAIN Dataset on Kaggle
 
-**Description:** The dataset contains order, customer, product, and shipping information for a global supply chain operation.
+**Description:** The dataset contains order, customer, product, and shipping information for a global supply chain operation from January, 2015 to January, 2018.
 
 **Key Features:**
 
@@ -111,10 +111,6 @@ ________________________________________________________________________________
     
     Customer lifetime value analysis
     
-    Retention analysis (one-time vs. repeat customers)
-    
-    VIP customer identification
-
 5. **Geographic Performance**
 
     Sales and delivery performance by country/region
@@ -156,25 +152,22 @@ ________________________________________________________________________________
 
 - [Segment] customers generate XX% of revenue but represent only XX% of customer base
 
-- XX% of customers are one-time buyers (retention opportunity)
-
 - Top 20 customers contribute XX% of total revenue
 
 **Product Performance**
 
-- Golf Carts and Bags has highest profit margin at 19.15%
+- The Golf Carts and Bags category has highest profit margin at 19.15%
+
+- The Fishing category made total sales of $6,929,653 with a profit margin of 12.14%
 
 - Ogio Golf Race Shoes has highest late delivery risk despite strong sales
 
-- Discounts >20% reduce profit margins by XX% on average
 
 **Operational Issues**
 
-- [Shipping Mode] shows high variance (unreliable)
+- Same day deliveries shows high variance (unreliable)
 
-- Processing time increased by XX% during [Time Period]
-
-- [Region] consistently experiences longer delivery times
+- The Central African region consistently experiences longer delivery times
 
 _______________________________________________________________________________________________________________________________
 
@@ -182,11 +175,13 @@ ________________________________________________________________________________
 
 - Negotiate with or replace unreliable shipping carriers showing high late delivery rates
 
+- Investigate the main causes of late deliveries for the First and Second Class shipping modes
+
+- Conduct sales campaigns to boost sales for the top ten products that generate the most profit 
+
 - Implement expedited processing for high-value customer segments
 
 - Optimize inventory in regions with longest delivery times
-
-- Review discount strategy for products with <X% profit margin
 
 - Launch customer retention program targeting one-time buyers
 
