@@ -79,7 +79,7 @@ ________________________________________________________________________________
 
 1. **Delivery Performance Analysis**
 
-    Overall on-time delivery rate: XX%
+    Overall on-time delivery rate
     
     Shipping modes ranked by reliability
     
@@ -92,8 +92,6 @@ ________________________________________________________________________________
     Day-of-week patterns in order placement
     
     Order processing time (order date → ship date)
-    
-    Seasonal patterns in late deliveries
 
 3. **Product Intelligence**
 
@@ -120,8 +118,6 @@ ________________________________________________________________________________
     Geographic delivery time variations
 
 6. **Advanced Analytics**
-
-    Cohort analysis: Monthly customer retention rates
     
     Window functions: Product ranking within categories, running totals
     
@@ -146,13 +142,11 @@ ________________________________________________________________________________
 
 - Average delivery delay: 0.57 days beyond scheduled time
 
-- XX% of late deliveries occur in [Region/Country]
-
 **Customer Insights**
 
-- [Segment] customers generate XX% of revenue but represent only XX% of customer base
+- A majority of the top 30 customers are from the Puerto Rican territory 
 
-- Top 20 customers contribute XX% of total revenue
+- The consumer segment appeals to more custommers than any other segment. 
 
 **Product Performance**
 
@@ -161,7 +155,6 @@ ________________________________________________________________________________
 - The Fishing category made total sales of $6,929,653 with a profit margin of 12.14%
 
 - Ogio Golf Race Shoes has highest late delivery risk despite strong sales
-
 
 **Operational Issues**
 
@@ -183,9 +176,7 @@ ________________________________________________________________________________
 
 - Optimize inventory in regions with longest delivery times
 
-- Launch customer retention program targeting one-time buyers
-
-- Investigate bottlenecks in [specific region/category] causing delays
+- Discontinue discount schemes that are >20%
 
 ____________________________________________________________________________________________________________________________
 
