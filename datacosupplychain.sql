@@ -363,6 +363,7 @@ GROUP BY p.product_id, p.product_name, p.category_name
 ORDER BY total_revenue DESC
 LIMIT 20;
 
+
 -- Category performance analysis
 SELECT 
     p.category_name,
@@ -393,6 +394,7 @@ GROUP BY p.product_id, p.product_name, p.category_name
 HAVING COUNT(*) >= 50
 ORDER BY risk_percentage DESC
 LIMIT 15;
+
 
 
 -- 4. CUSTOMER SEGMENTATION ANALYSIS
@@ -554,35 +556,8 @@ ORDER BY customer_id, order_date
 LIMIT 50;
 
 
--- 7. COHORT ANALYSIS
 
--- Monthly cohort retention
-WITH customer_cohorts AS (
-    SELECT 
-        customer_id,
-        DATE_TRUNC('month', MIN(order_date)) as cohort_month
-    FROM orders
-    GROUP BY customer_id
-),
-cohort_orders AS (
-    SELECT 
-        cc.cohort_month,
-        DATE_TRUNC('month', o.order_date) as order_month,
-        COUNT(DISTINCT o.customer_id) as customer_count
-    FROM customer_cohorts cc
-    JOIN orders o ON cc.customer_id = o.customer_id
-    GROUP BY cc.cohort_month, DATE_TRUNC('month', o.order_date)
-)
-SELECT 
-    cohort_month,
-    order_month,
-    customer_count,
-    ROUND(100.0 * customer_count / FIRST_VALUE(customer_count) OVER (PARTITION BY cohort_month ORDER BY order_month), 2) as retention_rate
-FROM cohort_orders
-ORDER BY cohort_month, order_month;
-
-
--- 8. PROFITABILITY ANALYSIS
+-- 7. PROFITABILITY ANALYSIS
 
 -- Profit analysis by product and category
 SELECT 
@@ -623,7 +598,7 @@ GROUP BY
 ORDER BY MIN(discount_rate);
 
 
--- 9. PROBLEM IDENTIFICATION
+-- 8. PROBLEM IDENTIFICATION
 
 -- Orders with significant delays
 SELECT 
